@@ -1,0 +1,11 @@
+{{#each this}}
+<li class="gallery-item" data-link="{{largeImageURL}}">
+    <img src={{webformatURL}} alt={{tags}}>
+    <ul class="socials">
+    <li class="socials-item"><span class="material-icons md-light">thumb_up</span>{{likes}}</li>
+    <li class="socials-item"><span class="material-icons md-light">visibility</span>{{views}}</li>
+    <li class="socials-item"><span class="material-icons md-light">comment</span>{{comments}}</li>
+    <li class="socials-item"><span class="material-icons md-light">cloud_download</span>{{downloads}}</li>
+    </ul>
+</li>
+{{/each}}

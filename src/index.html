@@ -11,16 +11,38 @@
   </head>
 
   <body>
-    <form class="search-form" id="search-form">
-      <input
-        type="text"
-        name="query"
-        autocomplete="off"
-        placeholder="Search images..."
-      />
-    </form>
-    <ul class="gallery">
-      <!-- Список <li> с карточками изображений -->
-    </ul>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+      </form>
+      <ul class="gallery">
+        <!-- Список <li> с карточками изображений -->
+      </ul>
+      <!-- <button type="button" class="is-hidden" data-action="load-more">
+        Load more
+      </button> -->
+      <svg
+        class="spinner is-hidden"
+        width="65px"
+        height="65px"
+        viewBox="0 0 66 66"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          class="path"
+          fill="none"
+          stroke-width="6"
+          stroke-linecap="round"
+          cx="33"
+          cy="33"
+          r="30"
+        ></circle>
+      </svg>
+    </div>
   </body>
 </html>
